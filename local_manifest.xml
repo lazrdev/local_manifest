@@ -1,10 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- Trees -->
- <project path="device/10or/G" name="RahulPalXDA/android_device_10or_G.git" remote="github" revision="lineage-18.1" />
- <project path="device/10or/msm8953-common" name="RahulPalXDA/android_device_10or_msm8953-common.git" remote="github" revision="lineage-18.1" />
- <project path="vendor/10or" name="RahulPalXDA/android_vendor_10or.git" remote="github" revision="master" />
- <project path="kernel/10or/G" name="10orDevs/android_kernel_10or_G-4.9.git" remote="github" revision="lineage-18.1" />
+<remote name="hsx02"
+           fetch="https://github.com/hsx02"/>
+   <remote name="lazr"
+           fetch="https://github.com/lazrdev"/>
+   <remote name="Chuck"
+           fetch="https://github.com/ChuckProjekt" />
+   <remote name="mi"
+           fetch="https://github.com/mi-sdm439" />
+   <remote name="pixel"
+           fetch="https://github.com/PixelExperience" />
+   <remote name="MANUAL"
+           fetch="https://github.com/LineageOS" />
+
+<!-- Kernels -->
+   <project path="kernel/xiaomi/sdm439" 
+            name="android_kernel_xiaomi_sdm439"
+            remote="mi" 
+            revision="a12/main"  
+            clone-depth="1"/>
+
+<!-- Device Tree and Common Device Tree -->
+   <project path="device/xiaomi/olives" 
+            name="android_device_xiaomi_olives" 
+            remote="lazr" 
+            revision="proton_12"/>
+   
+   <project path="device/xiaomi/sdm439-common" 
+            name="device_xiaomi_sdm439-common" 
+            remote="hsx02" 
+            revision="12.0"/>
+  
+<!-- Vendor Trees and Common Vendor Tree -->
+   <project path="vendor/xiaomi/olives" 
+            name="proprietary_vendor_xiaomi_olives" 
+            remote="mi"
+            revision="lineage-18.1"/>   
+   <project path="vendor/xiaomi/sdm439-common"  
+            name="vendor_xiaomi_sdm439-common" 
+            remote="hsx02" 
+            revision="12.0"/>
+
+<!-- Important vendor to for octavi or other roms if not booting with regular venCommon -->
+   <!-- <project path="vendor/xiaomi/sdm439-common" 
+            name="vendor_xiaomi_sdm439-common" 
+            remote="ian" 
+            revision="12.0" /> -->
+  
+   
+<!-- Replacements -->
+   
+<!-- Display and nightlight fix-->
+   <remove-project name="platform_hardware_qcom_display"/>
+   <project path="hardware/qcom-caf/msm8996/display" 
+            name="hardware_qcom-caf_display" 
+            remote="hsx02" 
+            revision="Aex-S"/>
+
+<!-- Bringup for FAILED: ninja: 'external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml' -->
+   <project path="external/ant-wireless/antradio-library" 
+            name="external_ant-wireless_antradio-library" 
+            remote="pixel"
+            revision="twelve"/>
+   
+<!-- Wi-Fi -->
+   <remove-project name="android_hardware_qcom_wlan"/>
+   <project path="hardware/qcom-caf/wlan" 
+            name="hardware_qcom-caf_wlan" 
+            remote="hsx02" 
+            revision="S"/>
+   
+<!-- Screen flickering AKA not booting/going back to splash. Fork and make changes to framework -->
+<!--    <remove-project name="platform_frameworks_base"/>
+   <project path="frameworks/base" 
+            name="platform_frameworks_base-1" 
+            remote="ian" 
+            revision="arcadia"/> -->
+   
+<!-- Settings bug -->
+   <remove-project name="android_packages_resources_devicesettings"/>
+   <project path="packages/resources/devicesettings" 
+            name="packages_resources_devicesettings" 
+            remote="hsx02" 
+            revision="lineage-18.1"/>
+   
+<!-- Manual bringup msm8996 HALS from LINEAGE AUDIO AND MEDIA -->
+<!--    <remove-project name="platform_hardware_qcom_audio" /> -->
+   <project path="hardware/qcom-caf/msm8996/audio" 
+            name="android_hardware_qcom_audio" 
+            groups="qcom,qcom_audio,pdk-qcom" 
+            revision="lineage-19.0-caf-msm8996" 
+            remote="MANUAL" />
+<!--    <remove-project name="platform_hardware_qcom_media" /> -->
+   <project path="hardware/qcom-caf/msm8996/media" 
+            name="android_hardware_qcom_media"  
+            groups="qcom,pdk-qcom" 
+            revision="lineage-19.0-caf-msm8996" 
+            remote="MANUAL" />
+   
+<!-- Radio additional enable only when all bugs are fixed -->
+   <project path="packages/apps/FMRadio" 
+            name="packages_apps_FMRadio" 
+            remote="hsx02" 
+            revision="lineage-18.1"/>
  
 </manifest>
