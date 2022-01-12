@@ -41,7 +41,7 @@
             name="vendor_xiaomi_sdm439-common" 
             remote="hsx02" 
             revision="12.0"/>
-
+<!--
 <!-- Important vendor to for octavi or other roms if not booting with regular venCommon -->
    <!-- <project path="vendor/xiaomi/sdm439-common" 
             name="vendor_xiaomi_sdm439-common" 
@@ -103,6 +103,6 @@
    <project path="packages/apps/FMRadio" 
             name="packages_apps_FMRadio" 
             remote="hsx02" 
-            revision="lineage-18.1"/>
+            revision="lineage-18.1"/> -->
  
 </manifest>
