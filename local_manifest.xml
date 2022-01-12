@@ -52,12 +52,12 @@
 <!-- Replacements -->
    
 <!-- Display and nightlight fix-->
-   <remove-project name="platform_hardware_qcom_display"/>
+ <!--  <remove-project name="platform_hardware_qcom_display"/>
    <project path="hardware/qcom-caf/msm8996/display" 
             name="hardware_qcom-caf_display" 
             remote="hsx02" 
             revision="Aex-S"/>
-
+-->
 <!-- Bringup for FAILED: ninja: 'external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml' -->
 <!--   <project path="external/ant-wireless/antradio-library" 
             name="external_ant-wireless_antradio-library" 
