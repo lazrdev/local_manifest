@@ -3,14 +3,14 @@
 
 <remote name="me" 
         fetch="https://github.com/lazrdev" />
-<remote name="shield44" 
-        fetch="https://gitlab.com/shield44" />
+<remote name="pixel-blobs" 
+        fetch="https://gitlab.pixelexperience.org/android/vendor-blobs/" />
 
   <!-- Kernels -->
-   <project path="kernel/xiaomi/olivewood" name="kernel_xiaomi_olivewood" remote="me" revision="twelve"  clone-depth="1" />
+   <project path="kernel/xiaomi/olivewood" name="kernel_xiaomi_olivewood-1" remote="me" revision="twelve"  clone-depth="1" />
   <!-- Device Trees -->
-   <project path="device/xiaomi/olivewood-1" name="device_xiaomi_olivewood-1" remote="me" revision="twelve"/>
+   <project path="device/xiaomi/olivewood" name="device_xiaomi_olivewood-1" remote="me" revision="twelve"/>
   <!-- Vendor Trees -->
-   <project path="vendor/xiaomi/olivewood"  name="vendor_xiaomi_olivewood" remote="shield44" revision="twelve"/>
+   <project path="vendor/xiaomi/olivewood"  name="vendor_xiaomi_olivewood" remote="pixel-blobs" revision="twelve"/>
 
 </manifest>
