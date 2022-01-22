@@ -7,7 +7,7 @@
         fetch="https://gitlab.pixelexperience.org/android/vendor-blobs/" />
 
   <!-- Kernels -->
-   <project path="kernel/xiaomi/olivewood" name="kernel_xiaomi_olivewood" remote="me" revision="twelve"  clone-depth="1" />
+   <project path="kernel/xiaomi/olivewood" name="kernel_xiaomi_olivewood-1" remote="me" revision="twelve"  clone-depth="1" />
   <!-- Device Trees -->
    <project path="device/xiaomi/olivewood" name="device_xiaomi_olivewood-1" remote="me" revision="twelve"/>
   <!-- Vendor Trees -->
