@@ -7,7 +7,9 @@
            fetch="https://github.com/mi-sdm439" />
  <remote name="hsx02"
            fetch="https://github.com/hsx02"/>
-        
+<remote  name="pxl"
+           fetch="https://github.com/PixelExperience" />   
+     
         
         <!-- Kernels -->
    <project path="kernel/xiaomi/sdm439" 
@@ -36,5 +38,9 @@
             name="vendor_xiaomi_sdm439-common" 
             remote="hsx02" 
             revision="12.0"/>
+
+<!-- Fixes -->
+<project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
+
 
 </manifest>
