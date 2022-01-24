@@ -7,7 +7,7 @@
            fetch="https://github.com/mi-sdm439" />
  <remote name="hsx02"
            fetch="https://github.com/hsx02"/>
-<remote  name="pxl"
+<remote name="pxl"
            fetch="https://github.com/PixelExperience" />   
   <remote name="Chuck"
          fetch="https://github.com/ChuckProjekt" />
