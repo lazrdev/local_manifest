@@ -42,5 +42,10 @@
 <!-- Fixes -->
 <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
 
+<remove-project name="LineageOS/android_packages_resources_devicesettings"/>
+   <project path="packages/resources/devicesettings" 
+            name="packages_resources_devicesettings" 
+            remote="mi" 
+            revision="lineage-18.1"/>
 
 </manifest>
