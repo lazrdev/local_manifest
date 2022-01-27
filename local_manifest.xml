@@ -66,11 +66,6 @@
             remote="hsx02" 
             revision="lineage-18.1"/> 
         
-         <remove-project name="LineageOS/android_packages_resources_devicesettings"/>
-   <project path="packages/resources/devicesettings" 
-            name="packages_resources_devicesettings" 
-            remote="hsx02" 
-            revision="lineage-18.1"/>
         <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sn" revision="master"  clone-depth="1"/> 
         
         <remove-project name="android_hardware_qcom_wlan"/>
