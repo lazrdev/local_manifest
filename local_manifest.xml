@@ -14,6 +14,10 @@
 
    <remote name="mi2"
                    fetch="https://github.com/mi-msm8937" />
+        <remote name="LOS"
+           fetch="https://github.com/LineageOS" />
+        <remote  name="sn"
+           fetch="https://github.com/SonalSingh18" />   
         
         <!-- Kernels -->
    <project path="kernel/xiaomi/sdm439" 
@@ -50,5 +54,23 @@
            <remove-project name="LineageOS/android_hardware_qcom_display" />
             <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" remote="mi2" revision="twelve"/>
                <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
-
+       
+        <project path="hardware/qcom-caf/msm8996/audio" 
+            name="android_hardware_qcom_audio" 
+            groups="qcom,qcom_audio,pdk-qcom" 
+            revision="lineage-19.0-caf-msm8996" 
+            remote="LOS" />
+        
+       <project path="packages/apps/FMRadio" 
+            name="packages_apps_FMRadio" 
+            remote="hsx02" 
+            revision="lineage-18.1"/> 
+        
+         <remove-project name="LineageOS/android_packages_resources_devicesettings"/>
+   <project path="packages/resources/devicesettings" 
+            name="packages_resources_devicesettings" 
+            remote="hsx02" 
+            revision="lineage-18.1"/>
+        <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sn" revision="master"  clone-depth="1"/> 
+        
 </manifest>
