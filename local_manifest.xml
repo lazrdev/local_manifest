@@ -60,6 +60,7 @@
             groups="qcom,qcom_audio,pdk-qcom" 
             revision="lineage-19.0-caf-msm8996" 
             remote="LOS" />
+<project path="hardware/qcom-caf/msm8996/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-19.0-caf-msm8996" remote="LOS" />
         
        <!--<project path="packages/apps/FMRadio" 
             name="packages_apps_FMRadio" 
