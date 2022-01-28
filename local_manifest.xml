@@ -72,5 +72,7 @@
             name="hardware_qcom-caf_wlan" 
             remote="hsx02" 
             revision="S"/>
+
+  <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" remote="LOS" revision="lineage-19.0"/>
         
 </manifest>
