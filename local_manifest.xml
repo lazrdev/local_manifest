@@ -54,8 +54,8 @@
            <remove-project name="LineageOS/android_hardware_qcom_display" />
             <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" remote="mi2" revision="twelve"/>
                <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
-       
-<remove-project name="LineageOS/platform_hardware_qcom_audio" />
+       <!--
+<remove-project name="LineageOS/platform_hardware_qcom_audio" />  -->
         <project path="hardware/qcom-caf/msm8996/audio" 
             name="android_hardware_qcom_audio" 
             groups="qcom,qcom_audio,pdk-qcom" 
@@ -76,8 +76,8 @@
 <!--
   <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" remote="LOS" revision="lineage-19.0"/>
  -->  
-
-<remove-project name="LineageOS/platform_hardware_qcom_media" />
+<!--
+<remove-project name="LineageOS/platform_hardware_qcom_media" />  -->
    <project path="hardware/qcom-caf/msm8996/media" 
             name="android_hardware_qcom_media"  
             groups="qcom,pdk-qcom" 
