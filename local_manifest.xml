@@ -82,6 +82,6 @@
             name="android_hardware_qcom_media"  
             groups="qcom,pdk-qcom" 
             revision="lineage-19.0-caf-msm8996" 
-            remote="MANUAL" />
+            remote="LOS" />
      
 </manifest>
