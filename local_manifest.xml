@@ -48,34 +48,35 @@
             revision="12.0"/>
 
 <!-- Fixes -->
-
+<!--device settings-->
 <remove-project name="LineageOS/android_packages_resources_devicesettings" />
            <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="hsx02" revision="lineage-18.1" />
-           <remove-project name="LineageOS/android_hardware_qcom_display" />
+          <!--display bringup-->
+        <remove-project name="LineageOS/android_hardware_qcom_display" />
             <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" remote="mi2" revision="twelve"/>
-               <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
-       <!--
+               <!--antradio library-->
+        <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
+       <!--caf audio bringup-->
+        <!--
 <remove-project name="LineageOS/platform_hardware_qcom_audio" />  -->
         <project path="hardware/qcom-caf/msm8996/audio" 
             name="android_hardware_qcom_audio" 
             groups="qcom,qcom_audio,pdk-qcom" 
             revision="lineage-19.0-caf-msm8996" 
             remote="LOS" />
-
+<!--FM radio-->
        <!--<project path="packages/apps/FMRadio" 
             name="packages_apps_FMRadio" 
             remote="hsx02" 
             revision="lineage-18.1"/> -->
         
-        <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sn" revision="master"  clone-depth="1"/> 
+       <!--ca wla bringup-->
         <remove-project name="LineageOS/android_hardware_qcom_wlan"/>
    <project path="hardware/qcom-caf/wlan" 
             name="hardware_qcom-caf_wlan" 
             remote="hsx02" 
             revision="S"/>
-<!--
-  <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" remote="LOS" revision="lineage-19.0"/>
- -->  
+<!--caf medi bringup-->
 <!--
 <remove-project name="LineageOS/platform_hardware_qcom_media" />  -->
    <project path="hardware/qcom-caf/msm8996/media" 
