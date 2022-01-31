@@ -65,5 +65,7 @@
             remote="hsx02" 
             revision="S"/>
 
+<project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sn" revision="master"  clone-depth="1"/>
+
      
 </manifest>
