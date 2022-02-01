@@ -49,8 +49,7 @@
 
 <!-- Fixes -->
 
-               <!--antradio library-->
-        <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
+            
        
 <!--FM radio-->
        <!--<project path="packages/apps/FMRadio" 
