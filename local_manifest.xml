@@ -49,13 +49,12 @@
 
 <!-- Fixes -->
 
-            
-       
-<!--FM radio-->
-       <!--<project path="packages/apps/FMRadio" 
-            name="packages_apps_FMRadio" 
+<!--ca wla bringup-->
+        <remove-project name="PotatoProject/android_hardware_qcom_wlan"/>
+   <project path="hardware/qcom-caf/wlan" 
+            name="hardware_qcom-caf_wlan" 
             remote="hsx02" 
-            revision="lineage-18.1"/> -->
+            revision="S"/>
         
 
 <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sn" revision="master"  clone-depth="1"/>
