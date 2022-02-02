@@ -40,7 +40,7 @@
 <!-- Vendor Trees and Common Vendor Tree -->
    <project path="vendor/xiaomi/olives" 
             name="proprietary_vendor_xiaomi_olives" 
-            remote="mi"
+            remote="me"
             revision="lineage-18.1"/>   
    <project path="vendor/xiaomi/sdm439-common"  
             name="vendor_xiaomi_sdm439-common" 
