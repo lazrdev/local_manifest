@@ -50,12 +50,15 @@
 <!-- Fixes -->
 
 <!--ca wla bringup-->
-        <remove-project name="android_hardware_qcom_wlan"/>
+        <remove-project name="hardware_qcom_wlan"/>
+
    <project path="hardware/qcom-caf/wlan" 
+
             name="hardware_qcom-caf_wlan" 
+
             remote="hsx02" 
+
             revision="S"/>
-        
 
 <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sn" revision="master"  clone-depth="1"/>
 
