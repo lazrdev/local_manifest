@@ -84,5 +84,5 @@
         
         <!--device settings-->
         <remove-project name="android_packages_resources_devicesettings"/>
-   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="hsx" revision="lineage-18.1"/>
+   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="hsx02" revision="lineage-18.1"/>
 </manifest>
