@@ -1,61 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="me" 
-        fetch="https://github.com/lazrdev" />
+<!-- Remotes -->
+        <remote name="me" 
+                fetch="https://github.com/lazrdev" />
         
-        <!-- Kernels -->
-   <project path="kernel/xiaomi/sdm439" 
-            name="android_kernel_xiaomi_sdm439"
-            remote="me" 
-            revision="a12/main"  
-            clone-depth="1"/>
+<!-- Kernel -->
+        <project path="kernel/xiaomi/sdm439" 
+                name="android_kernel_xiaomi_sdm439"
+                remote="me" 
+                revision="a12/main"  
+                clone-depth="1"/>
 
-<!-- Device Tree and Common Device Tree -->
-   <project path="device/xiaomi/olives" 
-            name="android_device_xiaomi_olives" 
-            remote="me" 
-            revision="radiant-12-lazrdev"/>
-   
-   <project path="device/xiaomi/sdm439-common" 
-            name="device_xiaomi_sdm439-common" 
-            remote="me" 
-            revision="12.0"/>
+<!-- Device Tree -->
+        <project path="device/xiaomi/olives" 
+                name="android_device_xiaomi_olives" 
+                remote="me" 
+                revision="radiant-12-lazrdev"/>
+        
+<!-- Common Device Tree -->
+        <project path="device/xiaomi/sdm439-common" 
+                name="device_xiaomi_sdm439-common" 
+                remote="me" 
+                revision="12.0"/>
   
-<!-- Vendor Trees and Common Vendor Tree -->
-   <project path="vendor/xiaomi/olives" 
-            name="proprietary_vendor_xiaomi_olives" 
-            remote="me"
-            revision="lineage-18.1"/>   
-   <project path="vendor/xiaomi/sdm439-common"  
-            name="vendor_xiaomi_sdm439-common" 
-            remote="me" 
-            revision="12.0"/>
+<!-- Vendor Tree -->
+        <project path="vendor/xiaomi/olives" 
+                name="proprietary_vendor_xiaomi_olives" 
+                remote="me"
+                revision="lineage-18.1"/> 
+        
+<!-- Common Vendor Tree -->
+        <project path="vendor/xiaomi/sdm439-common"  
+                name="vendor_xiaomi_sdm439-common" 
+                remote="me" 
+                revision="12.0"/>
 
 <!-- Fixes -->
 
-<!--caf wlan bringup-->
+<!-- WLAN Bringup-->
         <remove-project name="android_hardware_qcom_wlan"/>
         <project path="hardware/qcom-caf/wlan" 
                  name="hardware_qcom-caf_wlan" 
                  remote="me" 
-                  revision="S"/>
+                 revision="S"/>
         
-<!-- miui camera-->
+<!-- MIUI Camera -->
         <project path="vendor/xiaomi/miuicamera" 
                  name="vendor_xiaomi_miuicamera" 
                  remote="me" 
                  revision="master"  
                  clone-depth="1"/>
 
-<!--caf media bringup-->
+<!-- Media Bringup -->
         <remove-project name="android_hardware_qcom_media" />
         <project path="hardware/qcom-caf/msm8996/media" 
                  name="hardware_qcom_media" 
                  remote="me" 
                  revision="8.6.2" />
         
-        <!--audio bringup-->
+<!-- Audio Bringup -->
         <remove-project name="android_hardware_qcom_audio" />
         <project path="hardware/qcom-caf/msm8996/audio" 
                  name="android_hardware_qcom_audio" 
@@ -63,25 +67,24 @@
                  revision="lineage-19.0-caf-msm8996" 
                  remote="me" />
         
-        <!--display bringup-->
+<!-- Display Bringup -->
         <remove-project name="android_hardware_qcom_display" />
         <project path="hardware/qcom-caf/msm8996/display" 
                  name="android_hardware_qcom_display" 
                  remote="me" 
                  revision="twelve"/>
         
-        <!--fm radio-->
-         <project path="packages/apps/FMRadio" 
-                  name="packages_apps_FMRadio" 
-                  remote="me" 
-                  revision="lineage-18.1"/>
+<!-- FM Radio -->
+        <project path="packages/apps/FMRadio" 
+                 name="packages_apps_FMRadio" 
+                 remote="me" 
+                 revision="lineage-18.1"/>
         
-        <!--device settings-->
+<!-- Device Settings -->
         <remove-project name="android_packages_resources_devicesettings"/>
         <project path="packages/resources/devicesettings" 
-            name="packages_resources_devicesettings" 
-            remote="me" 
-            revision="lineage-18.1"/>
-
+                name="packages_resources_devicesettings" 
+                remote="me" 
+                revision="lineage-18.1"/>
 
 </manifest>
