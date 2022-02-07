@@ -80,7 +80,7 @@
                  remote="me" 
                  revision="lineage-18.1"/>
         
-        <project path="vendor/qcom/opensource_libfmjni"
+        <project path="vendor/qcom/opensource/libfmjni"
                  name="android_vendor_qcom_opensource_libfmjni"
                  remote="me"
                  revision="arrow-12.0"/>
