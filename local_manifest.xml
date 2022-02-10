@@ -57,7 +57,7 @@
         <!--sepolicy-->
         <remove-project name="system_sepolicy" />
    <project path="system/sepolicy" 
-            name="platform_system_sepolicy" 
+            name="android_system_sepolicy" 
             remote="me"
             revision="12.0" />
 
