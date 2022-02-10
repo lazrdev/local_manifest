@@ -8,6 +8,8 @@
            fetch="https://github.com/LineageOS" />
 <remote name="sajidshahriar72543" 
            fetch="https://github.com/sajidshahriar72543" />
+<remote name="pxl"
+           fetch="https://github.com/PixelExperience" />
 
 <!-- Kernel -->
         <project path="kernel/xiaomi/sdm439" 
