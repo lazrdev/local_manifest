@@ -4,7 +4,9 @@
 <!-- Remotes -->
         <remote name="me" 
                 fetch="https://github.com/lazrdev" />
-        
+        <remote name="LOS"
+           fetch="https://github.com/LineageOS" />
+
 <!-- Kernel -->
         <project path="kernel/xiaomi/sdm439" 
                 name="android_kernel_xiaomi_sdm439"
