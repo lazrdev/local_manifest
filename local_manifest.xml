@@ -52,11 +52,11 @@
                  revision="S"/>
         
 <!-- MIUI Camera -->
-        <project path="vendor/xiaomi/miuicamera" 
+   <!--     <project path="vendor/xiaomi/miuicamera" 
                  name="vendor_xiaomi_miuicamera" 
                  remote="me" 
                  revision="master"  
-                 clone-depth="1"/>
+                 clone-depth="1"/> -->
         
         <!--sepolicy-->
         <remove-project name="system_sepolicy" />
