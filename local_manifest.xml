@@ -6,6 +6,8 @@
                 fetch="https://github.com/lazrdev" />
         <remote name="LOS"
            fetch="https://github.com/LineageOS" />
+<remote name="sajidshahriar72543" 
+           fetch="https://github.com/sajidshahriar72543" />
 
 <!-- Kernel -->
         <project path="kernel/xiaomi/sdm439" 
@@ -57,9 +59,14 @@
         <!--sepolicy-->
         <remove-project name="system_sepolicy" />
    <project path="system/sepolicy" 
-            name="android_system_sepolicy" 
-            remote="me"
+            name="platform_system_sepolicy" 
+            remote="sajidshahriar72543"
             revision="12.0" />
+   
+   <project path="device/qcom/sepolicy-legacy-um" 
+            name="device_qcom_sepolicy-legacy-um" 
+            remote="pxl" 
+            revision="twelve"/>
 
 <!-- Media Bringup -->
         <remove-project name="android_hardware_qcom_media" />
