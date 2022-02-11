@@ -59,7 +59,7 @@
                  clone-depth="1"/> 
         
         <!--sepolicy-->
-        <remove-project name="system_sepolicy" />
+  <!--      <remove-project name="system_sepolicy" />
    <project path="system/sepolicy" 
             name="platform_system_sepolicy" 
             remote="sajidshahriar72543"
@@ -69,7 +69,7 @@
    <project path="device/qcom/sepolicy-legacy-um" 
             name="device_qcom_sepolicy-legacy-um" 
             remote="pxl" 
-            revision="twelve"/>
+            revision="twelve"/> -->
 
 <!-- Media Bringup -->
         <remove-project name="android_hardware_qcom_media" />
