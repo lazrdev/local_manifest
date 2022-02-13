@@ -60,7 +60,7 @@
 
             revision="S"/>
 <!-- miui camera-->
-<project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sn" revision="master"  clone-depth="1"/>
+<project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="me" revision="master"  clone-depth="1"/>
 
 <!--caf media bringup-->
 
