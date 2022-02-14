@@ -67,10 +67,9 @@
 <!--caf media bringup-->
 
 <remove-project name="hardware_qcom_media" />
-        <project path="hardware/qcom-caf/msm8996/media" 
-            name="android_hardware_qcom_media"  
-            groups="qcom,pdk-qcom" 
-            revision="lineage-19.0-caf-msm8996" 
-            remote="LOS" />
+ <project path="hardware/qcom-caf/msm8996/media" 
+                 name="hardware_qcom_media" 
+                 remote="me" 
+                 revision="8.6.2" />
      
 </manifest>
