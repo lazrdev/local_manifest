@@ -72,11 +72,5 @@
             groups="qcom,pdk-qcom" 
             revision="lineage-19.0-caf-msm8996" 
             remote="LOS" />
-<!-- sepolicy -->
-        <remove-project name="system_sepolicy" />
-   <project path="system/sepolicy" 
-            name="platform_system_sepolicy" 
-            remote="sajidshahriar72543"
-            revision="12.0" />
      
 </manifest>
