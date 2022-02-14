@@ -17,7 +17,9 @@
         <remote name="LOS"
            fetch="https://github.com/LineageOS" />
         <remote  name="sn"
-           fetch="https://github.com/SonalSingh18" />   
+           fetch="https://github.com/SonalSingh18" />  
+        <remote name="sajidshahriar72543" 
+           fetch="https://github.com/sajidshahriar72543" />
         
         <!-- Kernels -->
    <project path="kernel/xiaomi/sdm439" 
@@ -70,6 +72,17 @@
             groups="qcom,pdk-qcom" 
             revision="lineage-19.0-caf-msm8996" 
             remote="LOS" />
-
+<!-- sepolicy -->
+        <remove-project name="system_sepolicy" />
+   <project path="system/sepolicy" 
+            name="platform_system_sepolicy" 
+            remote="sajidshahriar72543"
+            revision="12.0" />
+   
+<remove-project name="device_qcom_sepolicy" />
+   <project path="device/qcom/sepolicy-legacy-um" 
+            name="device_qcom_sepolicy-legacy-um" 
+            remote="pxl" 
+            revision="twelve"/>
      
 </manifest>
