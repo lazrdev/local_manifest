@@ -40,7 +40,7 @@
         <project path="vendor/xiaomi/sdm439-common"  
                 name="vendor_xiaomi_sdm439-common" 
                 remote="me" 
-                revision="12.0"/>
+                revision="12.0-new"/>
 
 <!-- Fixes -->
 
