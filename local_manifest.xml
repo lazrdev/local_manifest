@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="me" 
-        fetch="https://github.com/lazrdev" />
- <remote name="mi"
-           fetch="https://github.com/mi-sdm439" />
- <remote name="hsx02"
-           fetch="https://github.com/hsx02"/>
-<remote name="pxl"
-           fetch="https://github.com/PixelExperience" />   
-  <remote name="Chuck"
-         fetch="https://github.com/ChuckProjekt" />
-
-   <remote name="mi2"
-                   fetch="https://github.com/mi-msm8937" />
-        <remote name="LOS"
-           fetch="https://github.com/LineageOS" />
-        <remote  name="sn"
-           fetch="https://github.com/SonalSingh18" />  
-        <remote name="sajidshahriar72543" 
-           fetch="https://github.com/sajidshahriar72543" />
+<!-- Remotes -->
+   <remote name="me" 
+            fetch="https://github.com/lazrdev" />
         
-        <!-- Kernels -->
+   <remote name="mi"
+            fetch="https://github.com/mi-sdm439" />
+        
+<!-- Kernel Tree -->
    <project path="kernel/xiaomi/sdm439" 
             name="android_kernel_xiaomi_sdm439"
             remote="mi" 
@@ -29,44 +16,48 @@
             clone-depth="1"/>
 
 <!-- Device Tree and Common Device Tree -->
-   <project path="device/xiaomi/olives" 
-            name="android_device_xiaomi_olives" 
+   <project path="device/xiaomi/mi439" 
+            name="android_device_xiaomi_mi439" 
             remote="me" 
-            revision="potato-12-lazrdev"/>
+            revision="potato-12"/>
    
    <project path="device/xiaomi/sdm439-common" 
             name="device_xiaomi_sdm439-common" 
             remote="me" 
             revision="12.0"/>
   
-<!-- Vendor Trees and Common Vendor Tree -->
-   <project path="vendor/xiaomi/olives" 
-            name="proprietary_vendor_xiaomi_olives" 
+<!-- Vendor Tree and Common Vendor Tree -->
+   <project path="vendor/xiaomi/mi439" 
+            name="proprietary_vendor_xiaomi_mi439" 
             remote="me"
             revision="lineage-18.1"/>   
+        
    <project path="vendor/xiaomi/sdm439-common"  
             name="vendor_xiaomi_sdm439-common" 
             remote="me" 
             revision="12.0-new"/>
 
-<!-- Fixes -->
+<!-- Replacements -->
 
-<!--caf wlan bringup-->
+<!-- WLAN -->
         <remove-project name="hardware_qcom_wlan"/>
         <project path="hardware/qcom-caf/wlan" 
             name="hardware_qcom-caf_wlan" 
-            remote="hsx02" 
+            remote="me" 
             revision="S"/>
         
-<!-- miui camera-->
-<project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="me" revision="master"  clone-depth="1"/>
+<!-- ANX Camera -->
+       <project path="vendor/xiaomi/miuicamera" 
+           name="vendor_xiaomi_miuicamera" 
+           remote="me" 
+           revision="master"  
+           clone-depth="1"/>
 
-<!--caf media bringup-->
-
-<remove-project name="hardware_qcom_media" />
- <project path="hardware/qcom-caf/msm8996/media" 
-                 name="hardware_qcom_media" 
-                 remote="me" 
-                 revision="8.6.2" />
+<!-- Media -->
+        <remove-project name="hardware_qcom_media" />
+        <project path="hardware/qcom-caf/msm8996/media" 
+            name="hardware_qcom_media" 
+            remote="me" 
+            revision="8.6.2" />
      
 </manifest>
