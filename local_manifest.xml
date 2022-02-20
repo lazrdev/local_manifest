@@ -47,20 +47,17 @@
    <project path="vendor/xiaomi/sdm439-common"  
             name="vendor_xiaomi_sdm439-common" 
             remote="me" 
-            revision="12.0"/>
+            revision="12.0-new"/>
 
 <!-- Fixes -->
 
 <!--caf wlan bringup-->
         <remove-project name="hardware_qcom_wlan"/>
-
-   <project path="hardware/qcom-caf/wlan" 
-
+        <project path="hardware/qcom-caf/wlan" 
             name="hardware_qcom-caf_wlan" 
-
             remote="hsx02" 
-
             revision="S"/>
+        
 <!-- miui camera-->
 <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="me" revision="master"  clone-depth="1"/>
 
