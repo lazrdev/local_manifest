@@ -21,10 +21,10 @@
             remote="me" 
             revision="potato-12"/>
    
-   <project path="device/xiaomi/dm439-common" 
+   <project path="device/xiaomi/sdm439-common" 
             name="device_xiaomi_sdm439-common-1" 
             remote="me" 
-            revision="12.0"/>
+            revision="12"/>
   
 <!-- Vendor Tree and Common Vendor Tree -->
    <project path="vendor/xiaomi/mi439" 
