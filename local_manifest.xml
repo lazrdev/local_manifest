@@ -44,7 +44,7 @@
         <project path="hardware/qcom-caf/wlan" 
             name="android_hardware_qcom-caf_wlan" 
             remote="me" 
-            revision="S"/>
+            revision="12"/>
         
 <!-- ANX Camera -->
        <project path="vendor/xiaomi/miuicamera" 
