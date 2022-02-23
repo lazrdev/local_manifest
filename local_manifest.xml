@@ -40,11 +40,11 @@
 <!-- Replacements -->
 
 <!-- WLAN -->
-     <!--   <remove-project name="hardware_qcom_wlan"/>
+   <remove-project name="hardware_qcom_wlan"/>
         <project path="hardware/qcom-caf/wlan" 
             name="android_hardware_qcom-caf_wlan" 
             remote="me" 
-            revision="12"/> -->
+            revision="12"/>
         
 <!-- ANX Camera -->
        <project path="vendor/xiaomi/miuicamera" 
