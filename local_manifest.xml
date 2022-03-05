@@ -70,11 +70,5 @@
             remote="chuck" 
             revision="8.6.2" />
    
- <!-- ANX Camera -->
-        <project path="vendor/xiaomi/miuicamera"
-            name="vendor_xiaomi_miuicamera" 
-            remote="me" 
-            revision="master"  
-            clone-depth="1"/>
    
 </manifest>
