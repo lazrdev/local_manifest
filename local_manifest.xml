@@ -10,6 +10,8 @@
         
    <remote name="chuck"
            fetch="https://github.com/ChuckProjekt" />
+   <remote name="gapps"
+           fetch="https://gitlab.com/potatodevices" />
    
 <!-- Kernel Tree -->
    <project path="kernel/xiaomi/sdm439" 
@@ -39,6 +41,12 @@
             name="vendor_xiaomi_sdm439-common" 
             remote="me" 
             revision="12"/>
+   
+<!-- GApps -->
+   <project path="vendor/google/gms"
+            name="vendor_google_gms"
+            remote="gapps"
+            revision="frico-release" />
 
 <!-- Replacements -->
 
