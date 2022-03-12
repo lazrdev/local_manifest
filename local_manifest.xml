@@ -29,7 +29,7 @@
    <project path="device/xiaomi/sdm439-common" 
             name="device_xiaomi_sdm439-common-1" 
             remote="me" 
-            revision="12"/>
+            revision="12-potato-gapps"/>
   
 <!-- Vendor Tree and Common Vendor Tree -->
    <project path="vendor/xiaomi/mi439" 
