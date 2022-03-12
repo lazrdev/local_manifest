@@ -78,5 +78,12 @@
             remote="chuck" 
             revision="8.6.2" />
    
+<!-- Bootanimation and sounds -->
+        <remove-project name="vendor_potato-prebuilts" />
+        <project path="vendor/potato-prebuilts"
+            name="vendor_potato-prebuilts"
+            remote="me"
+            revision="frico-release" />
+   
    
 </manifest>
