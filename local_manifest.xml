@@ -76,5 +76,9 @@
             remote="me" 
             revision="master"  
             clone-depth="1"/>
+
+<!-- Device Settings -->
+<remove-project name="android_packages_resources_devicesettings"/> <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="me" revision="lineage-18.1"/>
+
    
 </manifest>
