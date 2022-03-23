@@ -78,7 +78,16 @@
             clone-depth="1"/>
 
 <!-- Device Settings -->
-<remove-project name="LineageOS/android_packages_resources_devicesettings"/> <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="me" revision="lineage-18.1"/>
-
+      <remove-project name="LineageOS/android_packages_resources_devicesettings"/> 
+      <project path="packages/resources/devicesettings"
+            name="packages_resources_devicesettings"
+            remote="me" 
+            revision="lineage-18.1"/>
    
+   <!-- FM Radio -->
+       <project path="packages/apps/FMRadio" 
+                 name="packages_apps_FMRadio" 
+                 remote="me" 
+                 revision="lineage-18.1"/>
+
 </manifest>
