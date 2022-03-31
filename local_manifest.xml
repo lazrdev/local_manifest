@@ -82,5 +82,13 @@
                  name="packages_apps_FMRadio" 
                  remote="me" 
                  revision="lineage-18.1"/>
+   
+   <!-- Cherish Vendor Replacement -->
+   <remove-projevt name="android_vendor_cherish" />
+   <project path="vendor/cherish" 
+            name="android_vendor_cherish" 
+            groups="pdk-cw-fs,pdk-fs" 
+            revision="twelve-one" 
+            remote="me" />
 
 </manifest>
