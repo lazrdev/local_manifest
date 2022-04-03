@@ -1,88 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="me" 
-        fetch="https://github.com/lazrdev" />
- <remote name="mi"
-           fetch="https://github.com/mi-sdm439" />
- <remote name="hsx02"
-           fetch="https://github.com/hsx02"/>
-<remote name="pxl"
-           fetch="https://github.com/PixelExperience" />   
-  <remote name="Chuck"
-         fetch="https://github.com/ChuckProjekt" />
-
-   <remote name="mi2"
-                   fetch="https://github.com/mi-msm8937" />
-        <remote name="LOS"
-           fetch="https://github.com/LineageOS" />
-        <remote  name="sn"
-           fetch="https://github.com/SonalSingh18" />   
+<remote name="ivanich" 
+        fetch="https://github.com/ivanich" />
         
         <!-- Kernels -->
-   <project path="kernel/xiaomi/sdm439" 
-            name="android_kernel_xiaomi_sdm439"
-            remote="mi" 
-            revision="a12/main"  
+   <project path="kernel/htc/pyramid" 
+            name="android_kernel_htc_pyramid"
+            remote="ivanich" 
+            revision="cm-14.1"  
             clone-depth="1"/>
 
 <!-- Device Tree and Common Device Tree -->
-   <project path="device/xiaomi/olives" 
-            name="android_device_xiaomi_olives" 
-            remote="me" 
-            revision="lineage-18.1"/>
-   
-   <project path="device/xiaomi/sdm439-common" 
-            name="device_xiaomi_sdm439-common" 
-            remote="hsx02" 
-            revision="12.0"/>
+   <project path="device/htc/pyramid" 
+            name="android_device_htc_pyramid" 
+            remote="ivanich" 
+            revision="cm-14.1"/>
   
 <!-- Vendor Trees and Common Vendor Tree -->
-   <project path="vendor/xiaomi/olives" 
-            name="proprietary_vendor_xiaomi_olives" 
-            remote="mi"
-            revision="lineage-18.1"/>   
-   <project path="vendor/xiaomi/sdm439-common"  
-            name="vendor_xiaomi_sdm439-common" 
-            remote="hsx02" 
-            revision="12.0"/>
+   <project path="vendor/htc/pyramid" 
+            name="android_vendor_htc_pyramid" 
+            remote="ivanich"
+            revision="cm-11.0"/>   
 
-<!-- Fixes -->
-<!--device settings-->
-<remove-project name="LineageOS/android_packages_resources_devicesettings" />
-           <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="hsx02" revision="lineage-18.1" />
-          <!--display bringup-->
-        <remove-project name="LineageOS/android_hardware_qcom_display" />
-            <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" remote="mi2" revision="twelve"/>
-               <!--antradio library-->
-        <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pxl" revision="twelve"/>
-       <!--caf audio bringup-->
-        <!--
-<remove-project name="LineageOS/platform_hardware_qcom_audio" />  -->
-        <project path="hardware/qcom-caf/msm8996/audio" 
-            name="android_hardware_qcom_audio" 
-            groups="qcom,qcom_audio,pdk-qcom" 
-            revision="lineage-19.0-caf-msm8996" 
-            remote="LOS" />
-<!--FM radio-->
-       <!--<project path="packages/apps/FMRadio" 
-            name="packages_apps_FMRadio" 
-            remote="hsx02" 
-            revision="lineage-18.1"/> -->
-        
-       <!--ca wla bringup-->
-        <remove-project name="LineageOS/android_hardware_qcom_wlan"/>
-   <project path="hardware/qcom-caf/wlan" 
-            name="hardware_qcom-caf_wlan" 
-            remote="hsx02" 
-            revision="S"/>
-<!--caf medi bringup-->
-<!--
-<remove-project name="LineageOS/platform_hardware_qcom_media" />  -->
-   <project path="hardware/qcom-caf/msm8996/media" 
-            name="android_hardware_qcom_media"  
-            groups="qcom,pdk-qcom" 
-            revision="lineage-19.0-caf-msm8996" 
-            remote="LOS" />
-     
 </manifest>
