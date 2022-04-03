@@ -3,6 +3,8 @@
 
 <remote name="ivanich" 
         fetch="https://github.com/ivanich" />
+        <remote name="me"
+                fetch="https://github.com/lazrdev" />
         
         <!-- Kernels -->
    <project path="kernel/htc/pyramid" 
@@ -14,7 +16,7 @@
 <!-- Device Tree and Common Device Tree -->
    <project path="device/htc/pyramid" 
             name="android_device_htc_pyramid" 
-            remote="ivanich" 
+            remote="me" 
             revision="cm-14.1"/>
   
 <!-- Vendor Trees and Common Vendor Tree -->
