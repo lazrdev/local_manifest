@@ -20,25 +20,25 @@
 
 <!-- Device Tree and Common Device Tree -->
    <project path="device/xiaomi/mi439" 
-            name="device_xiaomi_mi439" 
+            name="android_device_xiaomi_mi439-oss" 
             remote="me" 
-            revision="potato-12"/>
+            revision="posp-12.1"/>
    
    <project path="device/xiaomi/sdm439-common" 
-            name="device_xiaomi_sdm439-common-1" 
+            name="device_xiaomi_sdm439-common-oss" 
             remote="me" 
-            revision="12-potato"/>
+            revision="posp-12.1"/>
   
 <!-- Vendor Tree and Common Vendor Tree -->
    <project path="vendor/xiaomi/mi439" 
-            name="vendor_xiaomi_mi439" 
+            name="vendor_xiaomi_mi439-oss" 
             remote="me"
-            revision="12.0"/>   
+            revision="posp-12.1"/>   
         
    <project path="vendor/xiaomi/sdm439-common"  
-            name="vendor_xiaomi_sdm439-common" 
+            name="vendor_xiaomi_sdm439-common-oss" 
             remote="me" 
-            revision="12"/>
+            revision="posp-12.1"/>
 
 <!-- Replacements -->
 
