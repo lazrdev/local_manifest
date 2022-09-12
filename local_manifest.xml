@@ -15,7 +15,7 @@
            fetch="https://github.com/ChuckProjekt" />
    
 <!-- Trees -->
-  <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi-sdm439"  revision="a12/main"/>
+  <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi"  revision="a12/main"/>
   <project path="device/xiaomi/Mi439"  name="android_device_xiaomi_Mi439" remote="me" revision="a12/rom/cipher"/>
   <project path="vendor/xiaomi/Mi439"  name="proprietary_vendor_xiaomi_Mi439" remote="me" revision="a11/master"/>
   <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="mi-thorium"/>
@@ -24,8 +24,8 @@
 <!-- Replacements -->
 
 <!-- WLAN -->
-   <remove-project name="android_hardware_qcom_wlan"/>
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="mi-sdm439" revision="lineage-19.1-caf"/>
+   <!--<remove-project name="android_hardware_qcom_wlan"/>
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="mi" revision="lineage-19.1-caf"/>-->
 
 <!-- Media -->
       <!--  <remove-project name="hardware_qcom_media" />
@@ -48,7 +48,7 @@
             remote="chuck" 
             revision="8.6.2" /> -->
    
-   <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" revision="lineage-18.1"/>
+   <!--<project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" revision="lineage-18.1"/>-->
    <remove-project name="android_system_core" />
 	<project path="vendor/cipher" name="android_system_core" remote="me" revision="twelve-L" />
    
