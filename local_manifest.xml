@@ -1,55 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote  name="mi-msm8937"
+           fetch="https://github.com/mi-msm8937"
+           revision="lineage-18.1" />
 
-<!-- Remotes -->
-   <remote name="me" 
-            fetch="https://github.com/lazrdev" />
-        
-   <remote name="mi"
-            fetch="https://github.com/mi-sdm439" />
-   
-   <remote name="mi-thorium"
-            fetch="https://github.com/mi-thorium" />
-        
-   <remote name="chuck"
-           fetch="https://github.com/ChuckProjekt" />
-   
-<!-- Trees -->
-  <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="mi"  revision="a12/main"/>
-  <project path="device/xiaomi/Mi439"  name="android_device_xiaomi_Mi439" remote="me" revision="a12/rom/cipher"/>
-  <project path="vendor/xiaomi/Mi439"  name="proprietary_vendor_xiaomi_Mi439" remote="me" revision="a11/master"/>
-  <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="mi-thorium"/>
+  <remote  name="mi-sdm439"
+           fetch="https://github.com/mi-sdm439"
+           revision="lineage-18.1" />
+
+  <remote  name="mi-thorium"
+           fetch="https://github.com/Mi-Thorium"
+           revision="a12/master" />
+
+ <!-- Replacements -->
+  <remove-project name="android_hardware_qcom_audio"/>
+  <project path="hardware/qcom-caf/msm8996-R/audio" name="android_hardware_qcom_audio" remote="mi-thorium" revision="lineage-19.1-caf-msm8953"/>
+
+ <!-- Common -->
+  <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="mi-thorium" revision="a12/rom/cipher"/>
   <project path="vendor/xiaomi/mithorium-common" name="proprietary_vendor_xiaomi_mithorium-common" groups="device" remote="mi-thorium"/>
 
-<!-- Replacements -->
+ <!-- Mi439 -->
+  <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439"                    remote="mi-sdm439"  revision="a12/main"/>
+  <project path="device/xiaomi/Mi439"  name="android_device_xiaomi_Mi439"     groups="device" remote="mi-thorium" revision="a12/rom/cipher"/>
+  <project path="vendor/xiaomi/Mi439"  name="proprietary_vendor_xiaomi_Mi439" groups="device" remote="mi-thorium" revision="a11/master"/>
+  <project path="vendor/miuicamera"    name="ArrowOS-Devices/android_vendor_miuicamera"       remote="github"     revision="arrow-12.0-a3"/>
 
-<!-- WLAN -->
-   <!--<remove-project name="android_hardware_qcom_wlan"/>
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="mi" revision="lineage-19.1-caf"/>-->
-
-<!-- Media -->
-      <!--  <remove-project name="hardware_qcom_media" />
-        <project path="hardware/qcom-caf/msm8996/media" 
-            name="hardware_qcom_media" 
-            remote="chuck" 
-            revision="8.6.2" /> -->
-     
-<!-- Audio -->
-        <remove-project name="android_hardware_qcom_audio" />
-        <project path="hardware/qcom-caf/msm8996/audio" 
-            name="android_hardware_qcom_audio" 
-            remote="mi-thorium" 
-            revision="lineage-19.1-caf-msm8953" />
-   
-<!-- Display -->
-      <!--  <remove-project name="hardware_qcom_display" />
-        <project path="hardware/qcom-caf/msm8996/display" 
-            name="hardware_qcom_display" 
-            remote="chuck" 
-            revision="8.6.2" /> -->
-   
-   <!--<project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" revision="lineage-18.1"/>-->
-   <remove-project name="android_system_core" />
-	<project path="system/core" name="android_system_core" remote="me" revision="twelve-L" />
-   
 </manifest>
