@@ -11,6 +11,9 @@
   <remote  name="mi-thorium"
            fetch="https://github.com/Mi-Thorium"
            revision="a12/master" />
+	
+	<remote name="me" 
+            fetch="https://github.com/lazrdev" />
 
  <!-- Replacements -->
   <remove-project name="android_hardware_qcom_audio"/>
