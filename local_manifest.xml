@@ -91,5 +91,5 @@
 	<remove-project name="android_system_core" />
 	<project path="vendor/cipher" name="android_vendor_cipher" remote="i" revision="twelve-L" />
         <project path="system/core" name="android_system_core" remote="i" revision="twelve-L" />
-     
+     #thx
 </manifest>
